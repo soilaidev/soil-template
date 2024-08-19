@@ -14,7 +14,7 @@
     "react": "^18",
     "react-dom": "^18",
     "soil-react": "^0.0.3",
-    "soilai": "^0.0.28"
+    "soilai": "^0.0.29"
   },
   "devDependencies": {
     "@types/node": "^20",

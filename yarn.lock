@@ -2342,10 +2342,10 @@ soilai@^0.0.22:
     ignore "^5.3.1"
     uuid "^10.0.0"
 
-soilai@^0.0.28:
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.28.tgz#0ee1e202d2bc079500e062f5e58e1bdff627924f"
-  integrity sha512-vu2A4it12+26vBUYiYWipHcEzBYiE+r9Pgan9+DHDPp+oN1tfd494/C1gbnnLnGKn6/X4bB1cyuyRS88x5cxog==
+soilai@^0.0.29:
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.29.tgz#1d5d85db2c0d9d60896c303e9f716fbf997607e5"
+  integrity sha512-JuOUenTfkXGNX0fiwh3RMuItHZwC6qyLYtaoeOssYit+S+cB5sKnUCqwmgZ8HYItWx/6TiAVM3u5BLFaQRxRIw==
   dependencies:
     debug "^4.3.6"
     dotenv "^16.4.5"
