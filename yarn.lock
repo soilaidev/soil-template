@@ -2143,7 +2143,7 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react@^18:
+react@^18, react@^18.3.1:
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
@@ -2324,14 +2324,33 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-soilai@^0.0.19:
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.19.tgz#a21569339dee29dfb662d3829d041689b263aecd"
-  integrity sha512-o+8rBuiM0JMdvMU5om3G9HQnTpeKZcB3BguhY65qCnl2yMxyGYFqjSFuEsRBSBAo3djnoOu7GaiYDNSQXt8TwA==
+soil-react@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/soil-react/-/soil-react-0.0.3.tgz#4289e67176740458f7221ae4f71fc27d0d57afff"
+  integrity sha512-URHruV+anJZ+4+5iFhu39AyENkoRPmlI6LoKT11VQ4IG27bnT9Ssv2zdKxqtezGOq0a9I5+P+FIpp3GLDlJizA==
+  dependencies:
+    react "^18.3.1"
+    soilai "^0.0.22"
+
+soilai@^0.0.22:
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.22.tgz#5976c1e1119e1611232a8b0e06fee46bf5412c9a"
+  integrity sha512-LORiJZ6CFoXYn3SUhOvsEXxoAXWc6K18WMhP/3EMHcmNMSfgmKolCoJ+bZnxcHb4fKQIGSwe5pkcvZbjk7vifQ==
   dependencies:
     debug "^4.3.6"
     dotenv "^16.4.5"
     ignore "^5.3.1"
+    uuid "^10.0.0"
+
+soilai@^0.0.28:
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.28.tgz#0ee1e202d2bc079500e062f5e58e1bdff627924f"
+  integrity sha512-vu2A4it12+26vBUYiYWipHcEzBYiE+r9Pgan9+DHDPp+oN1tfd494/C1gbnnLnGKn6/X4bB1cyuyRS88x5cxog==
+  dependencies:
+    debug "^4.3.6"
+    dotenv "^16.4.5"
+    ignore "^5.3.1"
+    uuid "^10.0.0"
 
 source-map-js@^1.0.2, source-map-js@^1.2.0:
   version "1.2.0"
@@ -2673,6 +2692,11 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+uuid@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-10.0.0.tgz#5a95aa454e6e002725c79055fd42aaba30ca6294"
+  integrity sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"

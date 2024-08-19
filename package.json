@@ -1,5 +1,7 @@
 {
   "name": "soil-template",
+  "description": "Smart-brained text-based code-gen",
+  "license": "MIT",
   "version": "0.0.1",
   "scripts": {
     "dev": "soilai & next dev",
@@ -11,7 +13,8 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "soilai": "^0.0.19"
+    "soil-react": "^0.0.3",
+    "soilai": "^0.0.28"
   },
   "devDependencies": {
     "@types/node": "^20",
