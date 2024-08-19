@@ -1,7 +1,13 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { FormEvent, useCallback, useEffect, useState } from "react";
-import { sendMessage, status } from "soilai";
+import {
+  FormEvent,
+  KeyboardEvent,
+  useCallback,
+  useEffect,
+  useState,
+} from "react";
+import { sendMessage, soilToast, status } from "soilai";
 
 export function NotFoundForm() {
   const pathname = usePathname();
@@ -14,13 +20,25 @@ export function NotFoundForm() {
   }, []);
 
   const handleSubmit = useCallback(
-    (e: FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
+    (e?: FormEvent<HTMLFormElement>) => {
+      e?.preventDefault();
 
-      sendMessage({ message, pathname, env: "react" });
+      sendMessage({ message, pathname, env: "react" }).then(() =>
+        soilToast("Harvest time!")
+      );
+
+      soilToast("Planting a new page...");
+
       setLoading(true);
     },
     [message, pathname]
+  );
+
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent<HTMLTextAreaElement>) => {
+      if (e.key === "Enter") handleSubmit();
+    },
+    [handleSubmit]
   );
 
   const [isLocalhost, setIsLocalhost] = useState(false);
@@ -34,10 +52,13 @@ export function NotFoundForm() {
   if (!isLocalhost || !soilStatusActive) return null;
 
   return (
-    <div>
-      <h2 className="text-xl mb-4 mt-8 text-center">
+    <div className="mt-8 p-8 w-fit max-w-full mx-auto flex flex-col items-center justify-center border rounded-lg border-black dark:border-white">
+      <h2 className="text-xl mb-4 text-center">
         Would you like to create a new page at{" "}
-        <span className="text-zinc-100">{pathname}</span>?
+        <span className="text-zinc-100 p-1 bg-zinc-300 dark:bg-zinc-700 rounded">
+          {pathname}
+        </span>
+        ?
       </h2>
       {loading ? (
         <div className="text-center mt-10 text-2xl dark:text-zinc-300">
@@ -52,21 +73,23 @@ export function NotFoundForm() {
             id="pageDescription"
             name="pageDescription"
             placeholder="Page description"
-            rows={4}
+            autoFocus
+            onKeyDown={handleKeyDown}
+            rows={2}
             cols={50}
             value={message}
             onChange={({ target: { value } }) => setMessage(value)}
             className="border border-gray-300 rounded-md p-2 mt-2 w-full dark:text-black"
           />
           <label
-            className="text-sm italic text-zinc-800 dark:text-zinc-200 mb-4"
+            className="mt-0.5 text-sm italic text-zinc-700 dark:text-zinc-300 mb-4"
             htmlFor="pageDescription"
           >
             Describe the page you would like to create
           </label>
           <button
             type="submit"
-            className="p-2 bg-black text-white dark:bg-white dark:text-black rounded-lg uppercase text-sm mt-2 w-full"
+            className="p-2 bg-black text-white dark:bg-white dark:text-black rounded-lg uppercase text-sm mt-1 w-full"
           >
             Submit
           </button>
