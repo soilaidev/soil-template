@@ -649,7 +649,7 @@ debug@^3.2.7:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.3.1, debug@^4.3.2, debug@^4.3.4, debug@^4.3.6:
+debug@^4.3.1, debug@^4.3.2, debug@^4.3.4:
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.6.tgz#2ab2c38fbaffebf8aa95fdfe6d88438c7a13c52b"
   integrity sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==
@@ -2324,30 +2324,28 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-soil-react@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/soil-react/-/soil-react-0.0.3.tgz#4289e67176740458f7221ae4f71fc27d0d57afff"
-  integrity sha512-URHruV+anJZ+4+5iFhu39AyENkoRPmlI6LoKT11VQ4IG27bnT9Ssv2zdKxqtezGOq0a9I5+P+FIpp3GLDlJizA==
+soil-react@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/soil-react/-/soil-react-0.0.7.tgz#46decfb557ec2c2bfb9cda01c6dd3d8891fbd9eb"
+  integrity sha512-r7OvJnNtAdslnJBMfuqw4IHdTkLo1GV9xo044eZL1IjsqRTczxi+mFxhX5a5NujPlpsJkQ68nibNxjeMjZG5AQ==
   dependencies:
     react "^18.3.1"
-    soilai "^0.0.22"
+    soilai "^0.0.40"
 
-soilai@^0.0.22:
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.22.tgz#5976c1e1119e1611232a8b0e06fee46bf5412c9a"
-  integrity sha512-LORiJZ6CFoXYn3SUhOvsEXxoAXWc6K18WMhP/3EMHcmNMSfgmKolCoJ+bZnxcHb4fKQIGSwe5pkcvZbjk7vifQ==
+soilai@^0.0.40:
+  version "0.0.40"
+  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.40.tgz#9a2a03c62bc27b771091f787f407204d7726c979"
+  integrity sha512-VPuDx9QV6dZQl4wYUnMBuFZ7MJwJ2ojuMKyUF0R29NkS4ncT6dN7/q+iVd9sXA9cN4q2HfiTd+n2PjL51G9BAQ==
   dependencies:
-    debug "^4.3.6"
     dotenv "^16.4.5"
     ignore "^5.3.1"
     uuid "^10.0.0"
 
-soilai@^0.0.29:
-  version "0.0.29"
-  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.29.tgz#1d5d85db2c0d9d60896c303e9f716fbf997607e5"
-  integrity sha512-JuOUenTfkXGNX0fiwh3RMuItHZwC6qyLYtaoeOssYit+S+cB5sKnUCqwmgZ8HYItWx/6TiAVM3u5BLFaQRxRIw==
+soilai@^0.0.42:
+  version "0.0.42"
+  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.42.tgz#43351ac30163eba1e27f15d4784483a7df099867"
+  integrity sha512-7AQgdmDu32sRQfIBu76famwB+IXZd8dNOINx0wW9nnylSL8XZlwAp2rlDTW+9xua3Ug7GNgFYmo/RBa0LworKQ==
   dependencies:
-    debug "^4.3.6"
     dotenv "^16.4.5"
     ignore "^5.3.1"
     uuid "^10.0.0"

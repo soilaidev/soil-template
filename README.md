@@ -45,3 +45,11 @@ bun dev
 6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
 Now you can start developing by clicking on the page in your browser and typing the change you want to make or by editing the pages in the `app` directory like `app/page.tsx`. Any changes you make will automatically update the page.
+
+## License
+
+Soil AI is licensed under the MIT License. See the LICENSE file for more details.
+
+---
+
+Made with ❤️ by the Soil AI team.

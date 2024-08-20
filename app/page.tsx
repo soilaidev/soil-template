@@ -9,16 +9,11 @@ export default function Home() {
       data-soil-id="HomePage"
       className="flex flex-col items-center justify-center min-h-screen p-4 text-center relative"
     >
-      <div className="absolute top-4 right-4">
-        <Link
-          href="/sign-in"
-          className="p-2.5 bg-black text-white dark:bg-white dark:text-black rounded-lg border border-zinc-400 hover:bg-zinc-800 dark:hover:bg-zinc-200"
-        >
-          Sign In
-        </Link>
-      </div>
       <div className="animate__animated animate__bounceInDown flex flex-col items-center">
-        <div className="flex justify-center mb-4 rounded-full bg-white p-2 w-fit">
+        <Link
+          href="/"
+          className="flex justify-center mb-4 rounded-full bg-white p-2 w-fit"
+        >
           <Image
             priority
             src="/logo.png"
@@ -26,7 +21,7 @@ export default function Home() {
             width={LOGO_SIZE}
             height={LOGO_SIZE}
           />
-        </div>
+        </Link>
         <h1 className="text-4xl">Soil AI</h1>
       </div>
 
