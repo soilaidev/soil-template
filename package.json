@@ -14,8 +14,8 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "soil-react": "^0.0.9",
-    "soilai": "^0.0.44"
+    "soil-react": "^0.0.10",
+    "soilai": "^0.0.45"
   },
   "devDependencies": {
     "@types/node": "^20",
