@@ -2324,27 +2324,18 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-soil-react@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/soil-react/-/soil-react-0.0.7.tgz#46decfb557ec2c2bfb9cda01c6dd3d8891fbd9eb"
-  integrity sha512-r7OvJnNtAdslnJBMfuqw4IHdTkLo1GV9xo044eZL1IjsqRTczxi+mFxhX5a5NujPlpsJkQ68nibNxjeMjZG5AQ==
+soil-react@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/soil-react/-/soil-react-0.0.9.tgz#55e337c388e2e0dabe76d79a2156b9cd28b6e3a9"
+  integrity sha512-YA3vFmJK3UxdxZkMp1sZKub2iGJ12Y9LCNh6XBlaFsCLpcM29nKC1cg0nKHN1BWP3O5LfJOge7wyDz3dsqrfvA==
   dependencies:
     react "^18.3.1"
-    soilai "^0.0.40"
+    soilai "^0.0.44"
 
-soilai@^0.0.40:
-  version "0.0.40"
-  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.40.tgz#9a2a03c62bc27b771091f787f407204d7726c979"
-  integrity sha512-VPuDx9QV6dZQl4wYUnMBuFZ7MJwJ2ojuMKyUF0R29NkS4ncT6dN7/q+iVd9sXA9cN4q2HfiTd+n2PjL51G9BAQ==
-  dependencies:
-    dotenv "^16.4.5"
-    ignore "^5.3.1"
-    uuid "^10.0.0"
-
-soilai@^0.0.42:
-  version "0.0.42"
-  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.42.tgz#43351ac30163eba1e27f15d4784483a7df099867"
-  integrity sha512-7AQgdmDu32sRQfIBu76famwB+IXZd8dNOINx0wW9nnylSL8XZlwAp2rlDTW+9xua3Ug7GNgFYmo/RBa0LworKQ==
+soilai@^0.0.44:
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/soilai/-/soilai-0.0.44.tgz#a545f24cb2711742349c315fa2c481cb1f06e272"
+  integrity sha512-rrtSMLdLI/dp8uW2CKcKsU6CIYGlHnhvgLmn7U8KrRwxXqlwBHf1+Gew4jbdMorrkqJOHo/8Nv2zHfJgVM1CSg==
   dependencies:
     dotenv "^16.4.5"
     ignore "^5.3.1"
